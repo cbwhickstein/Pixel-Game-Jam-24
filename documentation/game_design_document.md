@@ -1,4 +1,4 @@
-# Game Design Document <!-- omit from toc -->
+# TITLE <br> Game Design Document <!-- omit from toc -->
 
 # Table of Contents <!-- omit from toc -->
 - [Introduction](#introduction)

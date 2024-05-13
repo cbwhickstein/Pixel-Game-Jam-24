@@ -124,10 +124,10 @@ Choose from One of the following attacks
     + Top
     + Mid
     + Bottom
-  + Magical Attack
-    + Top
-    + Mid
-    + Bottom
++ Magical Attack
+  + Top
+  + Mid
+  + Bottom
 
 Enemy Turn:
 Choose from one of the folowing Blocks

@@ -1,0 +1,47 @@
+[gd_scene load_steps=2 format=3 uid="uid://c0s5ontge2p8l"]
+
+[ext_resource type="Script" path="res://scripts/battle_ui.gd" id="1_2f1ai"]
+
+[node name="BattleUi" type="Node2D"]
+script = ExtResource("1_2f1ai")
+
+[node name="HitUp" type="RichTextLabel" parent="."]
+texture_filter = 1
+offset_top = 5.0
+offset_right = 409.0
+offset_bottom = 88.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_selected_color = Color(0.862745, 0.470588, 0.317647, 1)
+theme_override_font_sizes/normal_font_size = 60
+theme_override_font_sizes/bold_font_size = 60
+text = "Hit Up"
+fit_content = true
+
+[node name="HitMid" type="RichTextLabel" parent="."]
+texture_filter = 1
+offset_top = 89.0
+offset_right = 432.0
+offset_bottom = 172.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_selected_color = Color(0.862745, 0.470588, 0.317647, 1)
+theme_override_font_sizes/normal_font_size = 60
+text = "Hit Middle"
+fit_content = true
+
+[node name="HitDown" type="RichTextLabel" parent="."]
+texture_filter = 1
+offset_top = 173.0
+offset_right = 441.0
+offset_bottom = 256.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_selected_color = Color(0.862745, 0.470588, 0.317647, 1)
+theme_override_font_sizes/normal_font_size = 60
+text = "Hit Down"
+fit_content = true
+
+[connection signal="mouse_entered" from="HitUp" to="." method="_on_hit_up_mouse_entered"]
+[connection signal="mouse_exited" from="HitUp" to="." method="_on_hit_up_mouse_exited"]
+[connection signal="mouse_entered" from="HitMid" to="." method="_on_hit_mid_mouse_entered"]
+[connection signal="mouse_exited" from="HitMid" to="." method="_on_hit_mid_mouse_exited"]
+[connection signal="mouse_entered" from="HitDown" to="." method="_on_hit_down_mouse_entered"]
+[connection signal="mouse_exited" from="HitDown" to="." method="_on_hit_down_mouse_exited"]

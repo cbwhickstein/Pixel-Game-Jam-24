@@ -1,2 +1,9 @@
 res://scenes/player.tscn
 res://scenes/enemy.tscn
+res://scenes/battle.tscn
+res://scenes/battle_ui.tscn
+res://scripts/battle_ui.gd
+res://scripts/battle_ui_fields.gd
+res://scenes/main.tscn
+res://scripts/battle.gd
+res://scripts/entity.gd

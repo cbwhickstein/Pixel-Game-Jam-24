@@ -1,0 +1,61 @@
+[gd_scene load_steps=7 format=3 uid="uid://b832arkd0ct3h"]
+
+[ext_resource type="Texture2D" uid="uid://ctbhg5n0h5gdd" path="res://sprites/enemy_sprite.png" id="1_bt35m"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cq43c"]
+atlas = ExtResource("1_bt35m")
+region = Rect2(0, 0, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a7ks7"]
+atlas = ExtResource("1_bt35m")
+region = Rect2(48, 0, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1lequ"]
+atlas = ExtResource("1_bt35m")
+region = Rect2(96, 0, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ja0f2"]
+atlas = ExtResource("1_bt35m")
+region = Rect2(144, 0, 48, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vave8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cq43c")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a7ks7")
+}],
+"loop": true,
+"name": &"hit_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1lequ")
+}],
+"loop": true,
+"name": &"hit_middle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ja0f2")
+}],
+"loop": true,
+"name": &"hit_up",
+"speed": 5.0
+}]
+
+[node name="Enemy" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_vave8")
+animation = &"hit_up"

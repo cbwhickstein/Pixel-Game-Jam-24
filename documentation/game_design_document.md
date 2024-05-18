@@ -216,9 +216,9 @@ W,S,Space
 | #     | Assignment                | Type      | Status        | Time          | Notes                                     |
 |-------|---------------------------|-----------|---------------|---------------|-------------------------------------------|
 | 1     | Design Document           | Other     | Finished      | 12.05.2024    |                                           |
-| 2     | Player Design             | Art       | Not Started   |               |                                           |
-| 3     | Player Programming        | Programm. | Not Started   |               |                                           |
-| 4     | Enemy Design              | Art       | Not Started   |               |                                           |
+| 2     | Player Design             | Art       | Finished      | 18.05.2024    |                                           |
+| 3     | Enemy Design              | Art       | Finished      | 18.05.2024    |                                           |
+| 4     | Player Programming        | Programm. | Not Started   |               |                                           |
 | 5     | Enemy Programming         | Programm. | Not Started   |               |                                           |
 | 6     | Tile Map Design           | Art       | Not Started   |               |                                           |
 | 7     | Battle Programming        | Programm. | Not Started   |               |                                           |

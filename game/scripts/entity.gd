@@ -7,6 +7,10 @@ enum Selected {
 	none = 3
 }
 
+@onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
+
+var sprite_animations = ["hit_up", "hit_middle", "hit_down", "default"] # order correlates with enum
+
 var hit_points: int = 100
 var blocking: Selected = Selected.none
 

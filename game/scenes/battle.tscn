@@ -10,11 +10,11 @@
 script = ExtResource("1_gykvq")
 
 [node name="Player" parent="." instance=ExtResource("1_hx7u8")]
-position = Vector2(-100, 0)
+position = Vector2(-150, 0)
 script = ExtResource("3_mxka0")
 
 [node name="Enemy" parent="." instance=ExtResource("2_4cy8x")]
-position = Vector2(100, 0)
+position = Vector2(150, 0)
 script = ExtResource("3_mxka0")
 
 [node name="Camera2D" type="Camera2D" parent="."]

@@ -8,7 +8,7 @@ script = ExtResource("1_2f1ai")
 [node name="HitUp" type="RichTextLabel" parent="."]
 texture_filter = 1
 offset_top = 5.0
-offset_right = 409.0
+offset_right = 640.0
 offset_bottom = 88.0
 theme_override_colors/default_color = Color(1, 1, 1, 1)
 theme_override_colors/font_selected_color = Color(0.862745, 0.470588, 0.317647, 1)
@@ -20,7 +20,7 @@ fit_content = true
 [node name="HitMid" type="RichTextLabel" parent="."]
 texture_filter = 1
 offset_top = 89.0
-offset_right = 432.0
+offset_right = 650.0
 offset_bottom = 172.0
 theme_override_colors/default_color = Color(1, 1, 1, 1)
 theme_override_colors/font_selected_color = Color(0.862745, 0.470588, 0.317647, 1)
@@ -31,7 +31,7 @@ fit_content = true
 [node name="HitDown" type="RichTextLabel" parent="."]
 texture_filter = 1
 offset_top = 173.0
-offset_right = 441.0
+offset_right = 686.0
 offset_bottom = 256.0
 theme_override_colors/default_color = Color(1, 1, 1, 1)
 theme_override_colors/font_selected_color = Color(0.862745, 0.470588, 0.317647, 1)

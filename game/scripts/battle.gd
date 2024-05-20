@@ -31,16 +31,24 @@ func _process(delta):
 		
 
 func _on_battle_ui_hit(direction):
-	set_sprites(direction, Selected.none)
 	sprite_set = true # counter to reset sprite
 	
 	enemy.blocking = randi() % 3
+	set_sprites(direction, enemy.blocking)
+	
 	if direction != enemy.blocking:
 		enemy.hit_points -= 10
 		print(enemy.hit_points) #Just to print for testing
-	
-	
 
+func _on_battle_ui_block(direction):
+	sprite_set = true # counter to reset sprite
+	
+	var enemy_attack = randi() % 3
+	set_sprites(direction, enemy_attack)
+	
+	if direction != enemy_attack:
+		player.hit_points -= 10
+		print(player.hit_points) #Just to print for testing
 
 
 func set_sprites(player_direction: int, enemy_direction: int):
